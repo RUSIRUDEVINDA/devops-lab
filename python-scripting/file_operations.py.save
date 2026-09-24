@@ -1,0 +1,79 @@
+# Write: create the file or replace its existing contents
+with open("server.txt", "w", encoding="utf-8")as file:
+	file.write("web-01\n")
+	file.write("db-01\n")
+
+# Read: get all the text from the file
+with open("server.txt", "r", encoding="utf-8")as file:
+	content = file.read()
+
+print("=== Original content ===")
+print(content) 
+
+# Append: add text at the end without removing existing content.
+with open("server.txt", "a", encoding="utf-8")as file:
+	file.write("monitoring-01\n")
+
+# Read line by line
+print("after appending")
+
+with open("server.txt", "r", encoding="utf-8")as file:
+	for line in file:
+		print(line, end="")
+
+# rad exsisting lines
+
+with open("server.txt", "r", encoding="utf-8")as file:
+	lines=file.readline#read the exsisting line
+with open("server.txt", "r", encode="utf-8")as file:
+        lines = file.readlines()
+
+#write the line back with the replacement
+with open("server.txt", "w", encoding="utf-8")as file:
+        for i in lines:
+                if i.rstrip("\n") == "web-01":
+                        file.write("web-02\n")
+                else:
+                        file.write(i)
+print("updated")
+#read the exsisting line
+with open("server.txt", "r", encode="utf-8")as file:
+        lines = file.readlines()
+
+#write the line back with the replacement
+with open("server.txt", "w", encoding="utf-8")as file:
+        for i in lines:
+                if i.rstrip("\n") == "web-01":
+                        file.write("web-02\n")
+                else:
+                        file.write(i)
+print("updated")
+#read the exsisting line
+with open("server.txt", "r", encode="utf-8")as file:
+        lines = file.readlines()
+
+#write the line back with the replacement
+with open("server.txt", "w", encoding="utf-8")as file:
+        for i in lines:
+                if i.rstrip("\n") == "web-01":
+                        file.write("web-02\n")
+                else:
+                        file.write(i)
+print("updated")
+#read the exsisting line
+with open("server.txt", "r", encode="utf-8")as file:
+        lines = file.readlines()
+
+#write the line back with the replacement
+with open("server.txt", "w", encoding="utf-8")as file:
+        for i in lines:
+                if i.rstrip("\n") == "web-01":
+                        file.write("web-02\n")
+                else:
+                        file.write(i)
+print("updated")
+
+
+
+
+

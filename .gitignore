@@ -1,0 +1,16 @@
+# Python environment and generated files
+.venv/
+__pycache__/
+*.pyc
+
+# Local secrets
+.env
+.env.*
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+
+# Generated logs
+*.log
